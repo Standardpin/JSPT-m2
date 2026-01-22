@@ -4,7 +4,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-brand-gray px-6 py-12 text-center">
         <img 
-          src="/images/ec-9e-ac-ed-99-9c-ec-9d-b4-ed-9b-84.png" 
+          src="/재활이후.png" 
           alt="재활 이후" 
           className="h-8 w-auto mx-auto mb-4"
         />
@@ -22,8 +22,9 @@ export default function Home() {
 
       {/* Logo Section */}
       <section className="py-10 flex justify-center">
+        {/* ⚠️ 파일명 대소문자 주의: IMG_2568.JPG */}
         <img 
-          src="/images/img-2568.jpeg" 
+          src="/IMG_2568.JPG" 
           alt="MOTIONA JS PT Logo" 
           className="w-48 h-auto"
         />
@@ -91,8 +92,9 @@ export default function Home() {
 
         {/* Therapy Image */}
         <div className="relative rounded-lg overflow-hidden mb-4">
+           {/* ⚠️ 파일명 대소문자 주의: IMG_2866.PNG */}
           <img 
-            src="/images/img-2866.jpeg" 
+            src="/IMG_2866.PNG" 
             alt="재활 치료 세션"
             className="w-full h-auto"
           />
@@ -193,8 +195,9 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-brand-gray px-6 py-8 text-center">
         <div className="flex justify-center mb-4">
+           {/* ⚠️ 파일명 대소문자 주의: IMG_2568.JPG */}
           <img 
-            src="/images/img-2568.jpeg" 
+            src="/IMG_2568.JPG" 
             alt="MOTIONA JS PT Logo" 
             className="w-24 h-auto"
           />
