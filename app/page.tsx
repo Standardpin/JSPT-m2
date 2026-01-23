@@ -8,8 +8,13 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
         />
-        {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-white/75" />
+        {/* Overlay for text readability with gradient transition */}
+        <div 
+          className="absolute inset-0 my-0 border-0"
+          style={{
+            background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.75) 0%, rgba(220, 220, 220, 0.85) 100%)'
+          }}
+        />
         {/* Content */}
         <div className="relative z-10">
           <img 
@@ -35,11 +40,12 @@ export default function Home() {
       </section>
 
       {/* Logo Section */}
-      <section className="py-10 flex justify-center">
+      <section className="py-10 flex flex-col items-center bg-[#DCDCDC]">
+        
         <img 
-          src="/images/logo.jpg" 
-          alt="MOTIONA JS PT Logo" 
-          className="w-48 h-auto"
+          src="/images/rehab-therapy.png" 
+          alt="재활 치료" 
+          className="w-full h-auto object-cover"
         />
       </section>
 
