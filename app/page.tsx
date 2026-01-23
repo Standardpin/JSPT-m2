@@ -2,22 +2,36 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-brand-gray px-6 py-12 text-center">
-        <img 
-          src="/images/rehab-after.png" 
-          alt="재활 이후" 
-          className="h-8 w-auto mx-auto mb-4"
+      <section className="relative px-10 py-20 text-center">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
         />
-        <h1 className="text-2xl font-bold text-foreground leading-tight mb-6">
-          움직임을 어디서<br />
-          이어가야 할지 고민되시나요?
-        </h1>
-        <p className="text-sm text-gray-600 mb-2">MOTIONA JS PT 센터</p>
-        <p className="text-xs text-gray-500">•</p>
-        <p className="text-sm text-gray-600 mt-2">
-          재활 이후의 시간을<br />
-          혼자 넘기지 않아도 되는 곳
-        </p>
+        {/* Overlay for text readability */}
+        <div className="absolute inset-0 bg-white/75" />
+        {/* Content */}
+        <div className="relative z-10">
+          <img 
+            src="/images/rehab-after.png" 
+            alt="재활 이후" 
+            className="h-15 w-auto mx-auto mb-4"
+          />
+          <h1 className="text-4xl font-bold text-foreground leading-tight mb-6">
+            움직임을 어디서<br />
+            이어가야 할지 고민되시나요?
+          </h1>
+          <img 
+            src="/images/center-text.png" 
+            alt="MOTIONA JS PT 센터" 
+            className="h-10 w-auto mx-auto mb-6"
+          />
+          
+          <p className="text-gray-600 text-2xl">
+            재활 이후의 시간을<br />
+            혼자 넘기지 않아도 되는 곳
+          </p>
+        </div>
       </section>
 
       {/* Logo Section */}
@@ -205,5 +219,5 @@ export default function Home() {
         </p>
       </footer>
     </main>
-  )
+  );
 }
